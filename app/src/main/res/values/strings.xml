@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">GitHubFollowersApp</string>
+    <string name="username_hint">UserName</string>
+    <string name="password_hint">Password</string>
+    <string name="login_btn">Login</string>
+    <string name="username_error">Invalid UserName</string>
+    <string name="password_error">Invalid Password</string>
+    <string name="show_followers_btn">Show</string>
+    <string name="followers_hint_et">Enter followers name</string>
+</resources>

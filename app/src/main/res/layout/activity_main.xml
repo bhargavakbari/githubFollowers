@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.activities.MainActivity">
+
+    <EditText
+        android:id="@+id/etFollowersName"
+        android:layout_width="0dp"
+        android:layout_height="42dp"
+        android:layout_marginLeft="3dp"
+        android:layout_marginRight="3dp"
+        android:background="@drawable/edittext_rounded_bg"
+        android:hint="@string/followers_hint_et"
+        android:paddingLeft="45dp"
+        android:paddingRight="10dp"
+        android:textColor="@color/black"
+        android:textColorHint="@color/blue_green"
+        android:textSize="14sp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toLeftOf="@id/showFollowersBtn"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/showFollowersBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/btn_height"
+        android:layout_marginRight="3dp"
+        android:background="@drawable/primary_btn_ripple_rounded_bg"
+        android:text="@string/show_followers_btn"
+        android:textColor="@color/white"
+        android:textSize="14sp"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/followersRecyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/etFollowersName" />
+
+    <include
+        layout="@layout/progress_layout"
+        android:visibility="gone" />
+
+
+</android.support.constraint.ConstraintLayout>

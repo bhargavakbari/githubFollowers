@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <android.support.constraint.Guideline
+        android:id="@+id/left_guidline"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_begin="@dimen/margin_left" />
+
+    <android.support.constraint.Guideline
+        android:id="@+id/right_guidline"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_end="@dimen/margin_right" />
+
+    <android.support.design.widget.TextInputLayout
+        android:id="@+id/wrapperEtUserName"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="180dp"
+        android:hint="@string/username_hint"
+        app:errorTextAppearance="@style/error_appearance"
+        app:layout_constraintLeft_toRightOf="@id/left_guidline"
+        app:layout_constraintRight_toLeftOf="@id/right_guidline"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <EditText
+            android:id="@+id/etUserName"
+            android:layout_width="match_parent"
+            android:layout_height="42dp"
+            android:background="@drawable/edittext_rounded_bg"
+            android:paddingLeft="45dp"
+            android:text="ABC"
+            android:textColor="@color/black"
+            android:textColorHint="@color/blue_green"
+            android:textSize="14sp"
+            app:layout_constraintLeft_toRightOf="@id/left_guidline"
+            app:layout_constraintRight_toLeftOf="@id/right_guidline"
+            app:layout_constraintTop_toTopOf="parent" />
+    </android.support.design.widget.TextInputLayout>
+
+
+    <android.support.design.widget.TextInputLayout
+        android:id="@+id/wrapperEtPassword"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:hint="@string/password_hint"
+        app:errorTextAppearance="@style/error_appearance"
+        app:layout_constraintLeft_toRightOf="@id/left_guidline"
+        app:layout_constraintRight_toLeftOf="@id/right_guidline"
+        app:layout_constraintTop_toBottomOf="@id/wrapperEtUserName"
+        app:passwordToggleDrawable="@drawable/show_password_selector"
+        app:passwordToggleEnabled="true">
+
+        <EditText
+            android:id="@+id/etPassword"
+            android:layout_width="match_parent"
+            android:layout_height="42dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/edittext_rounded_bg"
+            android:inputType="textPassword"
+            android:paddingLeft="45dp"
+            android:paddingRight="10dp"
+            android:text="AAA"
+            android:textColor="@color/black"
+            android:textColorHint="@color/blue_green"
+            android:textSize="14sp"
+            app:layout_constraintLeft_toRightOf="@id/left_guidline"
+            app:layout_constraintRight_toLeftOf="@id/right_guidline"
+            app:layout_constraintTop_toBottomOf="@id/wrapperEtUserName" />
+    </android.support.design.widget.TextInputLayout>
+
+
+    <Button
+        android:id="@+id/btnLogin"
+        android:layout_width="0dp"
+        android:layout_height="@dimen/btn_height"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/primary_btn_ripple_rounded_bg"
+        android:text="@string/login_btn"
+        android:textColor="@color/white"
+        android:textSize="14sp"
+        app:layout_constraintLeft_toRightOf="@id/left_guidline"
+        app:layout_constraintRight_toLeftOf="@id/right_guidline"
+        app:layout_constraintTop_toBottomOf="@id/wrapperEtPassword" />
+
+
+</android.support.constraint.ConstraintLayout>

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+
+    <color name="black">#000000</color>
+    <color name="red">#FF0000</color>
+    <color name="blue_green">#178abb</color>
+    <color name="cg_blue">#0b739f</color>
+    <color name="pale_blue">#c3e9fa</color>
+    <color name="white">#ffffff</color>
+    <color name="baby_blue">#93d5f4</color>
+    <color name="bg_progressbar">#A6055c81</color>
+</resources>
